@@ -10,7 +10,7 @@
     }
     connect() {
       return navigator.bluetooth.requestDevice({
-	  filters:[{services:[ 'heart_rate' ]},{services: ['96F4A050-7E31-453C-88BE-9634F4E02139']}]})
+	  filters:[{services:[ 'heart_rate' ]},{services: ['9C205A39-1250-487D-ABD7-E831C6290539']}]})
     .then(device => {
         this.device = device;
         return device.gatt.connect();
